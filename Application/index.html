@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-App="KRRclass" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" ng-App="KRRclass">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>MUSIC-O-BOT</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Cover Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Cover Template for Bootstrap_files/cover.css" rel="stylesheet">
+</head>
+
+<body class="text-center" ng-controller="MainCtrl">
+
+ <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 >MUSIC-O-BOT</h3>
+    
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Find new music!</h1>
+        <p class="lead">Give us a song, artist or genre and click on the buttons to find new songs!</p>
+        <div class="input-group">
+            <textarea class="form-control" ng-model="inputSong" placeholder="Type anything" rows="1" />
+            </textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" ng-click="goSongname()" type="button">By song</button>
+            </div>
+			<div class="input-group-append">
+              <button class="btn btn-outline-secondary" ng-click="goArtistname()" type="button">by artist</button>
+            </div>
+			<div class="input-group-append">
+              <button class="btn btn-outline-secondary" ng-click="goGenre()" type="button">By genre</button>
+            </div>
+     </div>
+	 <div class="input-group" id="artistbuttons">
+            
+     </div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Group 34 - Knowledge and Data 2020</p>
+        </div>
+      </footer>
+    </div>
+
+
+<!-- JavaScript libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/angular-chart.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
